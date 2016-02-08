@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack-dev-server  --host $IP --port $PORT"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +13,8 @@
     "angular": "^1.5.0",
     "babel-core": "^6.5.1",
     "babel-loader": "^6.2.2",
-    "webpack": "^1.12.13"
+    "raw-loader": "^0.5.1",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
   }
 }
