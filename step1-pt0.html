@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-sm-offset-3 col-sm-9">
+    <h1>Quick Test: step {{ vm.data.appStep }}</h1>
+    <p><a ng-click="vm.fillStep1()" href>fill form</a></p>
+  </div>
+</div>
+
+<div ng-include="'step1-pt' + vm.data.appStep + '.html'"></div>
+
+<code>
+    <pre>
+      {{ vm.cbl1 | json }}
+    </pre>
+</code>
