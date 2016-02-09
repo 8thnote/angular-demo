@@ -16,7 +16,7 @@ h1 {
   padding: .2em 1em;
 }
 
-.submit-button:hover {
+.submit-button:hover, .submit-button:active:hover, .submit-button:focus {
     color: #fff;
 }
 

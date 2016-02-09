@@ -1,11 +1,15 @@
 'use strict';
 
-var angular = require('angular');
-var uiRouter = require('angular-ui-router');
-var ngMessages = require('angular-messages');
+const angular = require('angular');
+const uiRouter = require('angular-ui-router');
+const ngMessages = require('angular-messages');
+
+if (ON_TEST) {
+    require('angular-mocks/angular-mocks');
+}
 
 
-var app = angular.module('app', [uiRouter, ngMessages]);
+const app = angular.module('app', [uiRouter, ngMessages]);
 
 require('./routes')(app);
 require('./controllers/index')(app);
