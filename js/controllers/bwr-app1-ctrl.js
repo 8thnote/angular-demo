@@ -2,7 +2,7 @@
 
 module.exports = function(app) {
     
-    app.controller('Step1Ctrl', function(WizardService, $location) {
+    app.controller('BwrApp1Ctrl', function(WizardService, $location) {
     	var vm = this;
     	
     	vm.data = WizardService.data;
@@ -27,7 +27,7 @@ module.exports = function(app) {
     	vm.stepForward = function() {
     		if (vm.data.appStep === 2) {
     			WizardService.saveData();
-    			$location.path('/step2');
+    			$location.path('/bwr-app2');
     		} else {
     			WizardService.stepForward();
     		}

@@ -2,6 +2,6 @@
 
 module.exports = function(app) {
     require('./main-ctrl')(app);
-    require('./step1-ctrl')(app);
-    require('./step2-ctrl')(app);
+    require('./bwr-app1-ctrl')(app);
+    require('./bwr-app2-ctrl')(app);
 }

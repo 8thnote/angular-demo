@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack-dev-server  --host $IP --port $PORT"
+    "test": "NODE_ENV=test karma start",
+    "webpack": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
@@ -14,9 +14,11 @@
     "babel-core": "^6.5.1",
     "babel-loader": "^6.2.2",
     "chai": "^3.5.0",
+    "jasmine-core": "^2.4.1",
     "karma": "^0.13.19",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.7",
     "karma-mocha": "^0.2.1",
     "karma-webpack": "^1.7.0",
     "mocha": "^2.4.5",

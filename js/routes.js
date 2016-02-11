@@ -5,18 +5,18 @@ module.exports = function(app) {
     app.config(function($stateProvider, $urlRouterProvider) {
     
       // For any unmatched url, redirect to /step1
-      $urlRouterProvider.otherwise('/step1');
+      $urlRouterProvider.otherwise('/bwr-app1');
       
       $stateProvider
-    	  .state('step1', {
-    	    url: "/step1",
-    	    templateUrl: "step1-pt0.html",
-    	    controller: 'Step1Ctrl as vm'
+    	  .state('bwr-app1', {
+    	    url: "/bwr-app1",
+    	    templateUrl: "bwr-app1.html",
+    	    controller: 'BwrApp1Ctrl as vm'
     	  })
-    	  .state('step2', {
-    	    url: "/step2",
-    	    templateUrl: "step2.html",
-    	    controller: 'Step2Ctrl as vm'
+    	  .state('bwr-app2', {
+    	    url: "/bwr-app2",
+    	    templateUrl: "bwr-app2.html",
+    	    controller: 'BwrApp2Ctrl as vm'
     	  });
     });
     

@@ -1,0 +1,494 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"wiz",
+				"wizardService"
+			],
+			[
+				"step",
+				"stepBackward"
+			],
+			[
+				"submi",
+				"submit_btns"
+			],
+			[
+				"red",
+				"redefined"
+			],
+			[
+				"def",
+				"defineRules"
+			],
+			[
+				"u",
+				"undefined"
+			],
+			[
+				"rules",
+				"rules_defined"
+			],
+			[
+				"Ap",
+				"App1El"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 107.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/dhelm/Documents/PROJECTS/angular-demo"
+	],
+	"file_history":
+	[
+		"/Users/dhelm/Documents/PROJECTS/angular-demo/package.json",
+		"/Users/dhelm/Documents/PROJECTS/angular-demo/webpack.config.js",
+		"/Users/dhelm/Documents/PROJECTS/angular-demo/js/index.js",
+		"/Users/dhelm/Documents/PROJECTS/angular-demo/js/routes.js",
+		"/Users/dhelm/Documents/PROJECTS/angular-demo/js/components/index.js",
+		"/Users/dhelm/Documents/PROJECTS/angular-demo/js/components/form/form-buttons.test.js",
+		"/Users/dhelm/Documents/PROJECTS/angular-demo/js/components/form/form-buttons.js",
+		"/Users/dhelm/Documents/PROJECTS/angular-demo/js/components/form/form-buttons-tmpl.html",
+		"/Users/dhelm/Documents/PROJECTS/angular-demo/js/controllers/index.js",
+		"/Users/dhelm/Documents/PROJECTS/angular-demo/js/controllers/main-ctrl.js",
+		"/Users/dhelm/Documents/PROJECTS/angular-demo/js/controllers/step1-ctrl.js",
+		"/Users/dhelm/Documents/PROJECTS/angular-demo/js/controllers/step2-ctrl.js",
+		"/Users/dhelm/Documents/PROJECTS/angular-demo/js/directives/custom-validator.js",
+		"/Users/dhelm/Documents/PROJECTS/angular-demo/js/services/wizard-service.js",
+		"/Volumes/CBLStack/palmetto/src/package.json",
+		"/Volumes/CBLStack/palmetto/src/resources/views/partials/marketing/bizible_js.blade.php",
+		"/Volumes/CBLStack/palmetto/src/resources/views/layouts/www.blade.php",
+		"/Volumes/CBLStack/palmetto/src/resources/views/marketing/landing-pages/partner/google.blade.php",
+		"/Volumes/CBLStack/palmetto/src/resources/views/layouts/marketing/landing-pages/partner/base.blade.php",
+		"/Volumes/CBLStack/palmetto/src/.env",
+		"/Volumes/CBLStack/palmetto/src/resources/views/web/partials/app1_js.blade.php",
+		"/Volumes/CBLStack/palmetto/src/public/js/main.js",
+		"/Volumes/CBLStack/palmetto/src/public/js/pages/lt_landing.js",
+		"/Volumes/CBLStack/palmetto/src/gulpfile.babel.js",
+		"/Volumes/CBLStack/palmetto/src/CircleBack/Http/routes/www.php",
+		"/Volumes/CBLStack/palmetto/src/CircleBack/Http/Controllers/Web/StaticController.php",
+		"/Volumes/CBLStack/palmetto/src/CircleBack/Http/Middleware/WwwRoute.php",
+		"/Volumes/CBLStack/palmetto/src/CircleBack/Http/ReplacedRoutes.php",
+		"/Volumes/CBLStack/palmetto/src/oak/repo/public_html/bwr_app1.php",
+		"/Volumes/CBLStack/palmetto/src/oak/repo/smarty/templates/bwr_app3.tpl",
+		"/Volumes/CBLStack/palmetto/src/oak/repo/public_html/bwr_app3.php",
+		"/Volumes/CBLStack/palmetto/src/resources/views/partials/timeout_dialog.blade.php",
+		"/Volumes/CBLStack/palmetto/src/resources/views/web/origination/app2.blade.php",
+		"/Volumes/CBLStack/palmetto/src/resources/lang/en/www-appLoanChoices.php",
+		"/Volumes/CBLStack/palmetto/src/oak/repo/public_html/declined_applicant.php",
+		"/Volumes/CBLStack/palmetto/src/oak/repo/smarty/templates/declined_applicant.tpl",
+		"/Volumes/CBLStack/palmetto/src/oak/repo/smarty/templates/includes/base.tpl",
+		"/Volumes/CBLStack/palmetto/src/resources/views/web/origination/declined.blade.php",
+		"/Volumes/CBLStack/palmetto/src/CircleBack/Http/Controllers/Web/HomeController.php",
+		"/Volumes/CBLStack/palmetto/src/resources/views/web/home/index.blade.php",
+		"/Volumes/CBLStack/palmetto/src/resources/views/layouts/inner.blade.php",
+		"/Volumes/CBLStack/palmetto/src/CircleBack/Http/routes/marketing.php",
+		"/Volumes/CBLStack/palmetto/src/resources/views/layouts/empty.blade.php",
+		"/Volumes/CBLStack/palmetto/src/CircleBack/Http/Controllers/WwwController.php",
+		"/Volumes/CBLStack/palmetto/src/vendor/symfony/routing/RouteCollection.php",
+		"/Volumes/CBLStack/palmetto/src/resources/views/layouts/marketing/landing-pages/default.blade.php",
+		"/Volumes/CBLStack/palmetto/src/oak/repo/public_html/declined.php",
+		"/Volumes/CBLStack/palmetto/src/resources/views/web/partials/app5_js.blade.php",
+		"/Volumes/CBLStack/palmetto/src/oak/repo/public_html/bwr_app2.php",
+		"/Volumes/CBLStack/palmetto/src/resources/lang/en/www-appBankInfo.php",
+		"/Volumes/CBLStack/palmetto/src/public/js/vendor/jquery.min.js",
+		"/Volumes/CBLStack/palmetto/src/resources/views/web/origination/app4.blade.php",
+		"/Volumes/CBLStack/palmetto/src/resources/views/web/static/how_to_borrow.blade.php",
+		"/Volumes/CBLStack/palmetto/src/resources/views/web/origination/app1.blade.php",
+		"/Volumes/CBLStack/palmetto/src/resources/views/web/origination/thank_you.blade.php",
+		"/Volumes/CBLStack/palmetto/src/oak/repo/public_html/thankyou.php",
+		"/Volumes/CBLStack/palmetto/src/resources/views/web/static/declined_applicant.blade.php",
+		"/Volumes/CBLStack/palmetto/src/oak/repo/smarty/templates/declined.tpl",
+		"/Volumes/CBLStack/palmetto/src/resources/views/web/origination/app5.blade.php",
+		"/Volumes/CBLStack/palmetto/src/resources/views/web/origination/declined_body.blade.php",
+		"/Volumes/CBLStack/palmetto/src/resources/views/marketing/landing-pages/partner/fea.blade.php",
+		"/Volumes/CBLStack/palmetto/src/resources/views/marketing/privacy.blade.php",
+		"/Volumes/CBLStack/palmetto/src/resources/views/marketing/landing-pages/default.blade.php",
+		"/Volumes/CBLStack/palmetto/src/resources/assets/www/google_landing.scss",
+		"/Volumes/CBLStack/palmetto/src/resources/views/partials/disclaimer.blade.php",
+		"/Volumes/CBLStack/palmetto/src/resources/views/web/origination/lendingtree_preapproved.blade.php",
+		"/Volumes/CBLStack/palmetto/src/public/css/vendor/jquery.validity.css",
+		"/Volumes/CBLStack/palmetto/src/resources/assets/www/pages.scss",
+		"/Volumes/CBLStack/palmetto/src/resources/assets/www/_base.scss",
+		"/Volumes/CBLStack/palmetto/src/resources/assets/www/base.scss",
+		"/Volumes/CBLStack/palmetto/src/resources/assets/www/pages/_landing_pages.scss",
+		"/Volumes/CBLStack/palmetto/src/oak/repo/smarty/templates/google_landing.tpl",
+		"/private/etc/apache2/extra/httpd-userdir.conf",
+		"/private/etc/apache2/httpd.conf",
+		"/private/etc/apache2/users/username.conf"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 99.0,
+		"where_history":
+		[
+			"/Users/dhelm/Documents/PROJECTS/angular-demo",
+			"/Volumes/CBLStack/palmetto",
+			"/Volumes/CBLStack/palmetto/src",
+			"/Volumes/CBLStack/palmetto",
+			"/Volumes/CBLStack/palmetto/src",
+			"/Volumes/CBLStack/palmetto/src/oak",
+			"/Volumes/CBLStack/palmetto/src",
+			"/Volumes/CBLStack/palmetto"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"kcd",
+			"elixir",
+			"emailcanopy",
+			"utm_content",
+			"bizible",
+			"bizable",
+			"bizzable",
+			"bizable",
+			"debug",
+			"console",
+			"App.Utils",
+			"validate_our_form",
+			"state_nf_name",
+			"CButils",
+			"Utils",
+			"validate",
+			"validation_result",
+			"utils",
+			"$form",
+			"validation_result",
+			"bwr_app1",
+			"replacedRoutes",
+			"state_nf_modal",
+			"armed_forces_modal",
+			"state_nf_modal",
+			"ssnRequiredModal",
+			"#ssnRequiredModal",
+			"console",
+			"state_modal",
+			"rules_defined",
+			"validate_our_form",
+			"Script",
+			"&#10070;",
+			"loan60text",
+			"60 Month Loan",
+			"60 Month",
+			"rules",
+			"partials.ga",
+			"ga('send'",
+			"fbq('track', 'Search');",
+			"fbq('track', \"PageView\")",
+			"fbq('track', 'PageView')",
+			"fbq('track', 'View')",
+			"fbq('track', 'Search')",
+			"fbq('track', 'Lead')",
+			"fbq('track', \"Lead\")",
+			"fbq('track', \"PageView\")",
+			"f,b,e",
+			"fbq",
+			"adroll",
+			"adroll_adv_id",
+			"ade8505ffebf4aaa9f7c7c4107ec9051",
+			"tags.w55c.net/rs?id=ade8505ffebf4aaa9f7c7c4107ec9051&t=marketing",
+			"view",
+			"tu tracking",
+			"window.CircleBack.App1Rules",
+			"$form",
+			"window.App1Rules",
+			"validate_our_form",
+			"about",
+			"inner",
+			"::get(",
+			"<!-- tu tracking -->",
+			"bwr_app2.php",
+			"tracking",
+			"bwr_app2.php",
+			"app2",
+			"validityNotEqual",
+			"submit_attempted",
+			"validate_our_form",
+			"?",
+			"app3",
+			"trackin",
+			"set",
+			"enter your pre-approval code",
+			"enter your preapproval code",
+			"layouts.marketing.landing-pages.partner.base",
+			"h2",
+			"landing",
+			"pages"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"state_nf_modal",
+			"armed_forces_modal",
+			"window.CircleBack.App1Rules"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "angular-demo.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"package.js",
+				"src/package.json"
+			],
+			[
+				"gulp",
+				"src/gulpfile.babel.js"
+			],
+			[
+				"app1_js",
+				"src/resources/views/web/partials/app1_js.blade.php"
+			],
+			[
+				".env",
+				"src/.env"
+			],
+			[
+				"bizible_js.blade.php",
+				"src/resources/views/partials/marketing/bizible_js.blade.php"
+			],
+			[
+				"www",
+				"src/resources/views/layouts/www.blade.php"
+			],
+			[
+				"main",
+				"src/public/js/main.js"
+			],
+			[
+				"partials/timeout_dialog",
+				"src/resources/views/partials/timeout_dialog.blade.php"
+			],
+			[
+				"lt_landing",
+				"src/public/js/pages/lt_landing.js"
+			],
+			[
+				"www.bl",
+				"src/resources/views/layouts/www.blade.php"
+			],
+			[
+				"declined_applicant.tpl",
+				"src/oak/repo/smarty/templates/declined_applicant.tpl"
+			],
+			[
+				"base",
+				"src/oak/repo/smarty/templates/includes/base.tpl"
+			],
+			[
+				"app1_s",
+				"src/resources/views/web/partials/app1_js.blade.php"
+			],
+			[
+				"route",
+				"src/vendor/symfony/routing/RouteCollection.php"
+			],
+			[
+				"declined.blade.php",
+				"src/resources/views/web/origination/declined.blade.php"
+			],
+			[
+				"circleback/http/middleware/ww",
+				"src/CircleBack/Http/Middleware/WwwRoute.php"
+			],
+			[
+				"declined",
+				"src/oak/repo/public_html/declined.php"
+			],
+			[
+				"declin",
+				"src/oak/repo/public_html/declined_applicant.php"
+			],
+			[
+				"app2",
+				"src/oak/repo/public_html/bwr_app2.php"
+			],
+			[
+				"www-appbankinfo",
+				"src/resources/lang/en/www-appBankInfo.php"
+			],
+			[
+				"www.",
+				"src/resources/views/layouts/www.blade.php"
+			],
+			[
+				"declined.tpl",
+				"src/oak/repo/smarty/templates/declined.tpl"
+			],
+			[
+				"decline_app",
+				"src/oak/repo/smarty/templates/declined_applicant.tpl"
+			],
+			[
+				"declined_app",
+				"src/resources/views/web/static/declined_applicant.blade.php"
+			],
+			[
+				"decline",
+				"src/oak/repo/public_html/declined_applicant.php"
+			],
+			[
+				"decl",
+				"src/oak/repo/public_html/declined.php"
+			],
+			[
+				"thankyou",
+				"src/oak/repo/public_html/thankyou.php"
+			],
+			[
+				"app1",
+				"src/resources/views/web/origination/app1.blade.php"
+			],
+			[
+				"www.blad",
+				"src/resources/views/layouts/www.blade.php"
+			],
+			[
+				"ltree_preapproved",
+				"src/resources/views/web/origination/lendingtree_preapproved.blade.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/Edu/JS/Organization/edu-js-organization.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 254.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

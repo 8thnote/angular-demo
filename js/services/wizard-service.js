@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function(app) {
-    
+
     app.service('WizardService', function($http, $location, $q, $timeout) {
     	var data = {
     		form: {
@@ -38,7 +38,7 @@ module.exports = function(app) {
     		
     		$timeout(function() {
     			deferred.resolve(data.form);
-    		}, 2000);
+    		}, 4000);
     		
     		promise = deferred.promise;
     		

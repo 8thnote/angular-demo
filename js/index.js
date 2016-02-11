@@ -4,10 +4,6 @@ const angular = require('angular');
 const uiRouter = require('angular-ui-router');
 const ngMessages = require('angular-messages');
 
-if (ON_TEST) {
-    require('angular-mocks/angular-mocks');
-}
-
 
 const app = angular.module('app', [uiRouter, ngMessages]);
 

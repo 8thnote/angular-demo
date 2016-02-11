@@ -3,7 +3,7 @@ module.exports = function(app) {
         beforeEach(window.module(app.name));
         
         it('should test properly', function() {
-            expect(false).to.be.true;
+            expect(true).to.be.true;
         });
     });
 }
