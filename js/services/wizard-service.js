@@ -11,8 +11,7 @@ module.exports = function(app) {
     			passphrase: "",
     			demoCheck: "",
     			another1: "",
-    			another2: "",
-    			priceSlider: 150
+    			another2: ""
     		},
     		appStep: 1,
     		saveDataPromise: null
@@ -29,7 +28,7 @@ module.exports = function(app) {
     	function saveData() {
     		var promise;
     		
-    		// Method 1: Mocking up the promise
+    		// Mocking the promise
     		var deferred = $q.defer();
     
     		// $http.post('/', data.form).then(function(response) {
@@ -43,7 +42,7 @@ module.exports = function(app) {
     		promise = deferred.promise;
     		
     		
-    		// Method 2: Using $http
+    		// Using $http
     		// promise = $http.post('/', data.form);
     		
     		data.saveDataPromise = promise;

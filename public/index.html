@@ -6,7 +6,7 @@
     <title>Origination Demo</title>
 
     <!-- vendor styles -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.8/font-awesome-animation.min.css" rel="stylesheet">
     
@@ -19,11 +19,15 @@
         <div class="col-sm-8 col-center">
           
           <div ui-view></div>
+
+          <div id="preload">
+            <i class="fa fa-icon fa-4x fa-spinner fa-pulse"></i>
+          </div>
     
         </div><!-- col -->
       </div><!-- row -->
     </div><!-- container -->
     
-    <script src="/public/assets/js/bundle.js"></script>
+    <script src="assets/js/bundle.js"></script>
 </body>
 </html>
