@@ -1,16 +1,17 @@
 body {
-  background: #D6D3CE;
+  background: #E4E0D9;
   color: #333;
 }
 
 #app-container {
-  min-height: 37em;
+  min-height: 60em;
 }
 
 .center {text-align: center;}
 
 h1 {
-    margin-bottom: 1em;
+    font-size: 2.2em;
+    margin: 1em 0 1.5em 0;
 }
 
 .col-center {
