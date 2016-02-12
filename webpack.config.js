@@ -7,7 +7,7 @@ var config = {
 	output: {
 		path: path.resolve('build/js/'),
 		publicPath: '/assets/js/',
-		filename: "bundle.js"
+		filename: "bundle.js" 
 	},
 
 	devServer: {

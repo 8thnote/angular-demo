@@ -13,7 +13,7 @@ module.exports = function(app) {
     			vm.cbl1.fName = "Your First";
     			vm.cbl1.lName = "Your Last";
     			vm.cbl1.email = "your@email.com";
-    			vm.cbl1.passphrase = "areyouwantingtosavetime?orareyouLazy?";
+    			vm.cbl1.passphrase = "thisIsaPassphraseLalalalala";
     			vm.cbl1.demoCheck = true;
     		}
     		else if (vm.data.appStep === 2) {

@@ -3,6 +3,10 @@ body {
   color: #333;
 }
 
+#app-container {
+  min-height: 37em;
+}
+
 .center {text-align: center;}
 
 h1 {
@@ -37,6 +41,32 @@ h1 {
 }
 
 #preload {width:0; height:0; overflow:hidden;}
+
+
+/* Simple animations */
+.cb-fade {
+  position: absolute;
+  width: 100%;
+}
+.cb-fade.ng-enter {
+  transition: 0.8s ease-out all;
+  opacity:0;
+  transform: translateX(2em);
+}
+.cb-fade.ng-enter.ng-enter-active {
+  opacity:1;
+  transform: translateX(0);
+}
+
+.cb-fade.ng-leave {
+  transition:0.4s ease-out all;
+  opacity:1;
+  transform: translateX(0);
+}
+.cb-fade.ng-leave.ng-leave-active {
+  opacity:0;
+  transform: translateX(-2em);
+}
 
 
 /* angular info */
