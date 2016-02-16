@@ -1,22 +1,44 @@
-body {
-  background: #E4E0D9;
-  color: #333;
-}
-
-#app-container {
-  min-height: 60em;
-}
-
+/* utility */
 .center {text-align: center;}
-
-h1 {
-    font-size: 2.2em;
-    margin: 1em 0 1.5em 0;
-}
 
 .col-center {
     float: none;
     margin: 0 auto;
+}
+
+.u-close-thirds {margin-left: -5px; margin-right: -5px;}
+.u-close-thirds .col-sm-4 {
+  padding: 0 5px;
+} 
+
+/* type */
+h1 {
+    font-size: 2.2em;
+    margin: 1em 0 0.5em 0;
+}
+
+/* layout */
+.fill-form-link a {
+  color: #D0C9BD;
+}
+
+.check-label {
+    font-weight: normal;
+    display: inline;
+}
+
+.loader {
+  padding: 2em 0;
+}
+
+#preload {width:0; height:0; overflow:hidden;}
+
+
+/* theme */
+
+body {
+  background: #E4E0D9;
+  color: #333;
 }
 
 .submit-button {
@@ -32,41 +54,33 @@ h1 {
     color: #fff;
 }
 
-.check-label {
-    font-weight: normal;
-    display: inline;
-}
 
-.loader {
-  padding: 2em 0;
-}
-
-#preload {width:0; height:0; overflow:hidden;}
+/* modules */
+.cb-checkbox {display: table-row;}
+.cb-checkbox .control-input-wrap, .cb-checkbox .control-label {display: table-cell; text-align: left;}
+.cb-checkbox .control-input-wrap {padding-right: 5px;}
 
 
-/* Simple animations */
-.cb-fade {
-  position: absolute;
-  width: 100%;
-}
+
+/* simple animations */
 .cb-fade.ng-enter {
   transition: 0.8s ease-out all;
   opacity:0;
-  transform: translateX(2em);
+  /*transform: translateX(2em);*/
 }
 .cb-fade.ng-enter.ng-enter-active {
   opacity:1;
-  transform: translateX(0);
+  /*transform: translateX(0);*/
 }
 
 .cb-fade.ng-leave {
   transition:0.4s ease-out all;
   opacity:1;
-  transform: translateX(0);
+  /*transform: translateX(0);*/
 }
 .cb-fade.ng-leave.ng-leave-active {
   opacity:0;
-  transform: translateX(-2em);
+  /*transform: translateX(-2em);*/
 }
 
 

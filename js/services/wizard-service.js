@@ -7,11 +7,19 @@ module.exports = function(app) {
     		form: {
     			fName: "",
     			lName: "",
-    			email: "",
-    			passphrase: "",
-    			demoCheck: "",
-    			another1: "",
-    			another2: ""
+    			street: "",
+                city: "",
+                state: "",
+                zip: "",
+                month: "",
+                day: "",
+                year: "",
+                ssn: "",
+                income: "",
+                email: "",
+                passphrase: "",
+                terms: false,
+                creditAuth: false
     		},
     		appStep: 1,
     		saveDataPromise: null

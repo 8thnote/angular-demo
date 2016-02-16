@@ -1,5 +1,7 @@
 <form name="cbl" class="form-horizontal" novalidate>
 
+<p class="fill-form-link col-sm-offset-3 col-sm-9"><a ng-click="vm.fillStep1()" href>fill form</a></p>
+
 <div class="form-group"
   ng-class="{ 'has-success': cbl.fName.$touched && cbl.fName.$valid,
               'has-error': cbl.fName.$touched && cbl.fName.$invalid }">
@@ -14,12 +16,15 @@
       validate-fname>
       
     <div ng-messages="cbl.fName.$error" ng-show="cbl.fName.$touched">
-      
+      <p ng-message="minlength" class="invalid">
+        Minimum of 2 characters
+      </p>
+
       <p ng-message="fname" class="invalid">
         Hey! You're not Sandeep... (unless you are)
       </p>
       
-      <div ng-messages-include="error-messages"></div>
+      <div ng-messages-include="partials/my-custom-messages.html"></div>
     </div>
   </div>
   
@@ -41,7 +46,7 @@
         Minimum of 2 characters
       </p>
       
-      <div ng-messages-include="error-messages"></div>
+      <div ng-messages-include="partials/my-custom-messages.html"></div>
     </div>
   </div>
   
@@ -58,7 +63,7 @@
       required>
       
     <div ng-messages="cbl.street.$error" ng-show="cbl.street.$touched">
-      <div ng-messages-include="error-messages"></div>
+      <div ng-messages-include="partials/my-custom-messages.html"></div>
     </div>
   </div>
   
@@ -75,7 +80,7 @@
       required>
       
     <div ng-messages="cbl.city.$error" ng-show="cbl.city.$touched">
-      <div ng-messages-include="error-messages"></div>
+      <div ng-messages-include="partials/my-custom-messages.html"></div>
     </div>
   </div>
   
@@ -94,7 +99,7 @@
     </select>
       
     <div ng-messages="cbl.state.$error" ng-show="cbl.state.$touched">
-      <div ng-messages-include="error-messages"></div>
+      <div ng-messages-include="partials/my-custom-messages.html"></div>
     </div>
   </div>
   
@@ -106,12 +111,12 @@
   <label for="zip" class="col-sm-3 control-label">Zip*</label>
   
   <div class="col-sm-7">
-    <input type="number" name="zip" id="zip" class="form-control" placeholder="Zip"
+    <input type="text" name="zip" id="zip" class="form-control" placeholder="Zip"
       ng-model="vm.cbl1.zip"
       required>
       
     <div ng-messages="cbl.zip.$error" ng-show="cbl.zip.$touched">
-      <div ng-messages-include="error-messages"></div>
+      <div ng-messages-include="partials/my-custom-messages.html"></div>
     </div>
   </div>
   
@@ -124,7 +129,7 @@
   
   <div class="col-sm-7">
 
-    <div class="row">
+    <div class="row u-close-thirds">
       <div class="col-sm-4">
         <select name="month" id="month" class="form-control"
           ng-model="vm.cbl1.month"
@@ -154,13 +159,13 @@
       </div><!-- /col -->
     </div><!-- /row -->
 
-    <div class="row">
+    <!--div class="row">
       <div class="col-sm-12">
-        <div Xng-messages="cbl.zip.$error" Xng-show="cbl.zip.$touched">
-          <div ng-messages-include="error-messages"></div>
+        <div ng-messages="cbl.zip.$error" ng-show="cbl.zip.$touched">
+          <div ng-messages-include="partials/my-custom-messages.html"></div>
         </div>
       </div>
-    </div>
+    </div-->
 
   </div><!-- /col -->
   
@@ -177,7 +182,7 @@
       required>
       
     <div ng-messages="cbl.ssn.$error" ng-show="cbl.ssn.$touched">
-      <div ng-messages-include="error-messages"></div>
+      <div ng-messages-include="partials/my-custom-messages.html"></div>
     </div>
   </div>
   
@@ -194,7 +199,7 @@
       required>
       
     <div ng-messages="cbl.income.$error" ng-show="cbl.income.$touched">
-      <div ng-messages-include="error-messages"></div>
+      <div ng-messages-include="partials/my-custom-messages.html"></div>
     </div>
   </div>
   
@@ -215,7 +220,7 @@
         Invalid email
       </p>
       
-      <div ng-messages-include="error-messages"></div>
+      <div ng-messages-include="partials/my-custom-messages.html"></div>
     </div>
   </div>
   
@@ -242,7 +247,7 @@
         Invalid password
       </p>
       
-      <div ng-messages-include="error-messages"></div>
+      <div ng-messages-include="partials/my-custom-messages.html"></div>
     </div>
     
     <div class="help-block" ng-show="cbl.passphrase.hasFocus">
@@ -254,28 +259,52 @@
 
 <div class="form-group">
   
-    <div class="col-sm-offset-3 col-sm-9">
+    <div class="col-sm-offset-3 col-sm-7">
+
+        <p>I have read and agree to the following:</p>
+
+        <div class="cb-checkbox">
     
-        <input type="checkbox" name="demoCheck" id="demoCheck"
-          ng-model="vm.cbl1.demoCheck"
-          required>
-          
-        <label for="demoCheck" class="control-label check-label">You need to check this</label>
+          <span class="control-input-wrap"><input type="checkbox" name="terms" id="terms"
+            ng-model="vm.cbl1.terms"
+            required></span>
+            
+          <label for="terms" class="control-label check-label">
+            Terms of Use Consenting to Electronic Contracts and Communication and Arbitration Agreement
+          </label>
+
+        </div>
+
+        <div class="cb-checkbox">
+    
+          <span class="control-input-wrap"><input type="checkbox" name="creditAuth" id="creditAuth"
+            ng-model="vm.cbl1.creditAuth"
+            required></span>
+            
+          <label for="creditAuth" class="control-label check-label">
+            Credit Profile Authorization to obtain and use credit bureau information
+          </label>
+
+        </div>
       
     </div>
     
 </div>
 
-<p class="col-sm-offset-3 col-sm-9"><a ng-click="vm.fillStep1()" href>fill form</a></p>
-
 <div class="form-group">
   <div class="col-sm-offset-3 col-sm-9">
-    <form-buttons
+    <!--form-buttons
       current-form="cbl"
       forward-cb="vm.stepForward()"
       backward-cb="vm.stepBackward()"
       current-step="vm.data.appStep"
-      total-steps="10"></form-buttons>
+      total-steps="10"></form-buttons-->
+
+    <button type="button" class="btn btn-default submit-button"
+      ng-click="vm.stepForward()"
+      ng-disabled="!cbl.$valid">
+        Check My Rate
+    </button>
   </div>
 </div>
 

@@ -8,7 +8,7 @@ const ngAnimate = require('angular-animate');
 
 const app = angular.module('app', [uiRouter, ngMessages, ngAnimate]);
 
-require('./routes')(app);
+// require('./routes')(app);
 require('./controllers/index')(app);
 require('./services/wizard-service')(app);
 require('./directives/index')(app);

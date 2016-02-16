@@ -1,0 +1,19 @@
+<h1>Quick Demo: step 3</h1>
+
+<div ng-if="!vm.result" class="cb-fade">
+	<h3>Please wait a few moments while we process your application...</h3>
+	<div class="loader center">
+    	<i class="fa fa-icon fa-4x fa-spinner fa-pulse"></i>
+    </div>
+</div>
+
+<div ng-if="vm.result" class="cb-fade">
+    <h3>Congratulations! You qualified for a loan of $5,000 at {{ vm.result }}.</h3>
+
+    <div class="center">
+    	<button class="btn btn-default submit-button"
+    		ng-click="vm.endDemo()">Get Your Loan</button>
+    </div>
+    
+    <!--<rzslider rz-slider-model="vm.cbl1.priceSlider"></rzslider>-->
+</div>

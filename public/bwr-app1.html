@@ -1,18 +1,55 @@
-<div class="row">
-  <div class="col-sm-12">
-    <h1>Check your custom rate for a $15,000 loan with 1 click!</h1>
-  </div>
-</div>
+<!doctype html>
+<html ng-app="app" ng-controller="BwrApp1Ctrl as vm">
+<head>
+	<meta charset="UTF-8">
 
-<script type="text/ng-template" id="error-messages">
-	<p ng-message="required">This field is required</p>
-	<p ng-message="minlength">This field is too short</p>
-</script>
+	<title>Origination Demo</title>
 
-<div ng-include="'partials/bwr-app1/bwr-app1-pt' + vm.data.appStep + '.html'" class="cb-fade"></div>
+	<!-- vendor styles -->
+	<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
+	<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.8/font-awesome-animation.min.css" rel="stylesheet">
 
-<!-- <code>
-    <pre>
-      {{ vm.cbl1 | json }}
-    </pre>
-</code> -->
+	<!-- app styles -->
+	<link rel="stylesheet" href="assets/css/current-site/old-style.css" />
+	<link rel="stylesheet" href="assets/css/current-site/pages.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+	<div ng-include="'partials/layout/header.html'"></div>
+
+	<div class="container">
+		<div class="row">
+			<div id="app-container" class="col-sm-8 col-center">
+
+				<div class="row">
+				  <div class="col-sm-12">
+				    <h1>Check your custom rate for a $15,000 loan with 1 click!</h1>
+				  </div>
+				</div>
+
+				<div ng-include="'partials/bwr-app1/bwr-app1-pt' + vm.data.appStep + '.html'" class="cb-fade"></div>
+
+				<code>
+				    <pre>
+				      {{ vm.cbl1 | json }}
+				    </pre>
+				</code>
+
+			</div><!-- /col -->
+		</div><!-- /row -->
+	</div><!-- /container -->
+
+	<div ng-include="'partials/layout/footer.html'"></div>
+
+
+
+
+	<!-- quick solution for preloading font-awesome spinner -->
+	<div id="preload"><i class="fa fa-icon fa-4x fa-spinner fa-pulse"></i></div>
+
+	<!-- the main js bundle created by webpack -->
+	<script src="assets/js/bundle.js"></script>
+</body>
+</html>
