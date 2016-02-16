@@ -14,14 +14,12 @@
       validate-fname>
       
     <div ng-messages="cbl.fName.$error" ng-show="cbl.fName.$touched">
-      <p ng-message="minlength" class="invalid">
-        Minimum of 2 characters
-      </p>
+      
       <p ng-message="fname" class="invalid">
         Hey! You're not Sandeep... (unless you are)
       </p>
       
-      <div ng-messages-include="partials/my-custom-messages.html"></div>
+      <div ng-messages-include="error-messages"></div>
     </div>
   </div>
   
@@ -43,7 +41,7 @@
         Minimum of 2 characters
       </p>
       
-      <div ng-messages-include="partials/my-custom-messages.html"></div>
+      <div ng-messages-include="error-messages"></div>
     </div>
   </div>
   
@@ -60,7 +58,7 @@
       required>
       
     <div ng-messages="cbl.street.$error" ng-show="cbl.street.$touched">
-      <div ng-messages-include="partials/my-custom-messages.html"></div>
+      <div ng-messages-include="error-messages"></div>
     </div>
   </div>
   
@@ -77,7 +75,7 @@
       required>
       
     <div ng-messages="cbl.city.$error" ng-show="cbl.city.$touched">
-      <div ng-messages-include="partials/my-custom-messages.html"></div>
+      <div ng-messages-include="error-messages"></div>
     </div>
   </div>
   
@@ -96,7 +94,7 @@
     </select>
       
     <div ng-messages="cbl.state.$error" ng-show="cbl.state.$touched">
-      <div ng-messages-include="partials/my-custom-messages.html"></div>
+      <div ng-messages-include="error-messages"></div>
     </div>
   </div>
   
@@ -113,7 +111,7 @@
       required>
       
     <div ng-messages="cbl.zip.$error" ng-show="cbl.zip.$touched">
-      <div ng-messages-include="partials/my-custom-messages.html"></div>
+      <div ng-messages-include="error-messages"></div>
     </div>
   </div>
   
@@ -159,12 +157,46 @@
     <div class="row">
       <div class="col-sm-12">
         <div Xng-messages="cbl.zip.$error" Xng-show="cbl.zip.$touched">
-          <div ng-messages-include="partials/my-custom-messages.html"></div>
+          <div ng-messages-include="error-messages"></div>
         </div>
       </div>
     </div>
 
   </div><!-- /col -->
+  
+</div>
+
+
+<div class="form-group" ng-class="{ 'has-error': cbl.ssn.$touched && cbl.ssn.$invalid }">
+  
+  <label for="ssn" class="col-sm-3 control-label">SSN #*</label>
+  
+  <div class="col-sm-7">
+    <input type="text" name="ssn" id="ssn" class="form-control" placeholder="Social Security #"
+      ng-model="vm.cbl1.ssn"
+      required>
+      
+    <div ng-messages="cbl.ssn.$error" ng-show="cbl.ssn.$touched">
+      <div ng-messages-include="error-messages"></div>
+    </div>
+  </div>
+  
+</div>
+
+
+<div class="form-group" ng-class="{ 'has-error': cbl.income.$touched && cbl.income.$invalid }">
+  
+  <label for="income" class="col-sm-3 control-label">Annual Income*</label>
+  
+  <div class="col-sm-7">
+    <input type="text" name="income" id="income" class="form-control" placeholder="Annual Income"
+      ng-model="vm.cbl1.income"
+      required>
+      
+    <div ng-messages="cbl.income.$error" ng-show="cbl.income.$touched">
+      <div ng-messages-include="error-messages"></div>
+    </div>
+  </div>
   
 </div>
 
@@ -183,11 +215,12 @@
         Invalid email
       </p>
       
-      <div ng-messages-include="partials/my-custom-messages.html"></div>
+      <div ng-messages-include="error-messages"></div>
     </div>
   </div>
   
 </div>
+
 
 <div class="form-group" 
   ng-class="{ 'has-success': cbl.passphrase.$touched && cbl.passphrase.$valid,
@@ -204,12 +237,12 @@
       ng-minlength="16"
       validate-passphrase>
     
-    <div ng-messages="cbl.email.$error" ng-show="cbl.email.$touched">
+    <div ng-messages="cbl.passphrase.$error" ng-show="cbl.passphrase.$touched">
       <p ng-message="password" class="invalid">
         Invalid password
       </p>
       
-      <div ng-messages-include="partials/my-custom-messages.html"></div>
+      <div ng-messages-include="error-messages"></div>
     </div>
     
     <div class="help-block" ng-show="cbl.passphrase.hasFocus">
@@ -219,9 +252,7 @@
   
 </div>
 
-<div class="form-group" 
-  ng-class="{ 'has-success': cbl.passphrase.$valid,
-              'has-error': cbl.passphrase.$touched && cbl.passphrase.$invalid  }">
+<div class="form-group">
   
     <div class="col-sm-offset-3 col-sm-9">
     
